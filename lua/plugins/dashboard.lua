@@ -33,8 +33,8 @@ return {
 			[[                                                                       ]],
 		}
 		dashboard.section.buttons.val = {
-			dashboard.button("SPC p v", " Current Directory"),
-			dashboard.button("SPC p f", "󰱼 Find file"),
+			dashboard.button("SPC p v", "  Current Directory"),
+			dashboard.button("SPC p f", "󰱼  Find file"),
 			dashboard.button("q", ") Quit", ":q<CR>"),
 		}
 		alpha.setup(dashboard.opts)
