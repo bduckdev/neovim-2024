@@ -14,10 +14,10 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- next greatest remap ever : asbjornHaland
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- search and replace
 
@@ -33,5 +33,12 @@ vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- live server
-vim.api.nvim_create_user_command("LSS", "LiveServerStart",{})
-vim.api.nvim_create_user_command("LSX", "LiveServerStop",{})
+vim.api.nvim_create_user_command("LSS", "LiveServerStart", {})
+vim.api.nvim_create_user_command("LSX", "LiveServerStop", {})
+
+-- go to global todos
+vim.keymap.set("n", "gt", ":e ~/Documents/GLOBAL_TODOS.md<CR>")
+
+-- go back + go foward
+vim.keymap.set("n", "gb", ":bprev<CR>")
+vim.keymap.set("n", "gf", ":bnext<CR>")

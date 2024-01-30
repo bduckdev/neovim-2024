@@ -9,9 +9,11 @@ This year I'm experimenting with adding more custom UI stuff. Some of it is rice
 ## Changes
 
 ### Package Manager
+
 - Migrated from Packer to Lazy
 
 ### LSP and formatter stuff
+
 - Removed lsp-zero
 
 - Removed formatter.nvim
@@ -21,26 +23,6 @@ This year I'm experimenting with adding more custom UI stuff. Some of it is rice
 ### Live Server
 
 removed liveserver.nvim in favor of writing a command in set.lua to do it through the npm cli
-
-## TODO
-
-- Decide on using fugitive or lazygit for git management
-
-- Consider [Trouble.nvim](https://github.com/folke/trouble.nvim) for lsp info
-
-- Rewrite live-server commands to use npm tools
-
-- add all this new stuff to my [dotfiles](https://github.com/bduckdev/.dotfiles)
-
-- add plugin links to readme.md
-
-### Add Plugins
-
-- [UndoTree](https://github.com/mbbill/undotree)
-
-- [Harpoon](https://github.com/ThePrimeagen/harpoon/tree/harpoon2) (fast file switching)
-
-- Git Integration (need to make up my mind on this one)
 
 ### Plugins
 
