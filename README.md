@@ -22,7 +22,7 @@ This year I'm experimenting with adding more custom UI stuff. Some of it is rice
 
 ### Live Server
 
-removed liveserver.nvim in favor of writing a command in set.lua to do it through the npm cli
+- removed liveserver.nvim in favor of writing a command in set.lua to do it through the npm cli
 
 ### Plugins
 

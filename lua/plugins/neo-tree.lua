@@ -7,13 +7,11 @@ return {
         "MunifTanjim/nui.nvim",
     },
     config = function()
-        require('neo-tree').setup({
+        require("neo-tree").setup({
             hijack_netrw_behavior = "open_current",
             window = {
                 position = "current",
-                mappings = {
-
-                },
+                mappings = {},
             },
             filesystem = {
                 filtered_items = {
@@ -23,7 +21,7 @@ return {
                     hide_hidden = false, -- only works on Windows for hidden files/directories
                 },
             },
-            vim.keymap.set("n", "<leader>pv", vim.cmd.Neotree)
+            vim.keymap.set("n", "<leader>pv", vim.cmd.Neotree),
         })
-    end
+    end,
 }
