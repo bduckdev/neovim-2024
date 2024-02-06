@@ -48,6 +48,7 @@ return {
                     enable = false,
                 },
             })
+            vim.keymap.set("n", "<leader>gaa", ":G add -A<CR>", { noremap = true, silent = true })
         end,
     },
 }
