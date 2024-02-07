@@ -78,4 +78,41 @@ return {
 			vim.cmd("highlight! TabLineFill guibg=NONE guifg=white")
 		end,
 	},
+	{
+		"folke/tokyonight.nvim",
+		name = "tokyonight",
+		config = function()
+			vim.g.tokyonight_style = "night"
+			vim.g.tokyonight_italic_functions = true
+			vim.g.tokyonight_italic_variables = true
+			--vim.cmd("colorscheme tokyonight")
+		end,
+	},
+	{
+		"shaunsingh/nord.nvim",
+		name = "nord",
+		config = function()
+			--vim.cmd("colorscheme nord")
+		end,
+	},
+	{
+		"Mofiqul/dracula.nvim",
+		name = "dracula",
+		config = function()
+			local dracula = require("dracula")
+			dracula.setup({
+				italics = {
+					comments = true,
+					keywords = true,
+					functions = true,
+					strings = true,
+					variables = true,
+				},
+				transparent_bg = true,
+				enable_treesitter = true,
+				enable_terminal = true,
+			})
+			--vim.cmd("colorscheme dracula")
+		end,
+	},
 }

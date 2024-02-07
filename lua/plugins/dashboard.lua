@@ -27,6 +27,7 @@ return {
 			[[                                                                       ]],
 		}
 		dashboard.section.buttons.val = {
+			dashboard.button("SPC p f", "󰱼  Find file"),
 			dashboard.button(
 				"SPC l s",
 				"󰤘  Most Recent Buffer",
